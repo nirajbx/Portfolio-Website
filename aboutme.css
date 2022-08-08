@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: poppins;
+    src: url(./Poppins-Regular.ttf);
+}
+
+.aboutheader{
+    background-image: url(./Images/Bg.jpg);
+    background-size: cover;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 70px;
+    height:70px;
+    padding: 0px 0px 0px 60px;}
+
+/* Navigation*/
+.nav{
+    display: flex;
+    list-style: none;    
+    padding-top: 10px;
+}
+
+a{
+    text-decoration:#6082B6;
+    color:black;
+}
+
+.current{
+    text-decoration:#6082B6;
+    color:black;
+    padding : 10px 40px 0px 0px ;
+    font-size: 17px;
+    font-family: poppins;
+}
+.current:hover{
+    text-decoration: 2px underline #6082B6;
+    display: flex;
+    transition:0.5s;
+}
+.current1{
+    text-decoration:#89CFF0;
+    text-decoration: underline 2px;
+    padding : 10px 40px 0px 0px ;
+    font-size: 17px;
+    font-family: poppins;
+}
+.current1:hover{
+    text-decoration: none;
+}
+
+.show{
+    text-decoration:underline #6082B6;
+    padding-bottom: 22px;
+    cursor: pointer;
+}
+.hidden{
+    visibility: hidden;
+    padding-bottom: 30px;
+}
+.show:hover{
+    text-decoration: none;
+}
+.show:hover + .hidden{
+    visibility: visible;
+    color: #6082B6;
+    
+}
+
+#iconcolor{
+    color: #6082B6;
+}
+.section{
+    margin-top: 50px;
+    text-align: center;
+    font-family:poppins;
+    
+}
+.bline{
+    text-align: center;
+    padding-bottom: 15x;
+}
+.line{
+    border-bottom:solid 2px ;
+    margin-left: 630px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 3px;
+    width: 100px;
+    align-items: center;
+    color: #A7C7E7;
+}
+
+/*----------------------About Me------------------------ */
+
+.aboutsection{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:poppins;
+}
+
+#bg1{
+    background-size: cover;
+    background-image: url(./Images/mymg.jpeg);
+    border-bottom:  #000 solid 3px;
+}
+
+#d{
+    display: flex;
+    height: 300px;
+}
+
+.about-info{
+    display: flex;
+    height: 250px;
+    text-align: center;   
+}
+
+.img{
+    width: 30%;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 25px;
+ }
+.aboutline{
+    border-right: #6082B6 3px solid;
+ }
+
+.bio{
+    padding-top: 30px;
+    font-family: poppins;
+    width: 800px;
+    padding-left: 50px;
+    background-color: #e4f0fc;
+    text-align: center;
+ }
+.aboutawards{
+    font-family: poppins;
+    display: flex;
+    gap: 30px;
+    margin-block: 30px;
+    text-align: center;
+ }
+#award1{
+    color: #6082B6;
+ }
+.progress {
+    overflow: hidden;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: #fff;
+    filter: drop-shadow(0 0 3px #87b6fc);
+ }
+ .progress div {
+    font-family: poppins;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: #6082B6;
+  }
+
+.title{
+    text-align: center;
+ }
+.aline{
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-bottom: #6082B6 2px solid;
+    margin-block: 7px;
+    margin-left: 630px;
+    width: 120px;  
+ }
+.aboutbar{
+    font-family: poppins;
+    text-align: left;
+    background-color: #000;
+    color: #ccc;
+    padding-top: 14px;
+    padding-bottom: 40px;
+}
+.aboutbar h4{
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+
+ /* details */
+
+.details{
+    height: 250px;
+    text-align: center;
+    margin-bottom: 130px;
+}
+.testimonials {
+    padding-left: 35px;
+    width: 95%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+}
+
+
+.testimonials ul {
+    margin-top: 15px;
+    margin-left: 15px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+}
+.testimonials p {
+    border: 1px solid;
+    border-radius: 5px ;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.testimonials img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.ttext{
+    margin-left: 30px;
+    text-align: left;
+}
+
+/*------------------------------- footer-------------------------------- */
+
+.main-footer{
+
+    background:#6082B6;
+    color:#fff;
+    height: 400px;
+    display: flex;
+    gap: 70px;
+    text-align: center;
+    flex-direction: row;
+    padding-left: 15px;
+    font-family: poppins;
+}
+.footer1{
+    padding: 50px 0px 0px 70px;
+    font-size: 16px;
+    font-family: monospace;
+    text-align: left;
+    width: 33.3%;
+}
+.footer2{
+    padding: 50px 200px 0px 100px;
+    text-align:left;
+    font-size: 16px;
+    justify-content: space-between;
+    font-family: monospace;
+    width: 33.3%px;
+
+}
+.li2 a{
+    color: #fff;
+}
+.li2 a:hover{
+    position: relative;
+    left: 12px;
+    color:#89CFF0;
+    cursor: pointer;
+    filter: drop-shadow(0 0 2px #6f96cf);
+}
+.footer3{
+    padding: 50px 0px 0px 10px;
+    text-align:left;
+    font-size: 16px;
+    justify-content: center;
+    font-family: monospace;
+    width: 33.3%;
+
+}
+.footer4{
+    display: flex;
+
+}
+.fc{  
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-left: 10px;
+}
+#is{
+    color:#fff;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px; 
+    font-size: 20px;
+    line-height: 40px; 
+    border-radius: 100% ;
+    display: inline-block;
+    background-color:#A7C7E7;
+
+
+}
+#is:hover{
+    color: #000;
+    background-color: #fff;
+    transition: ease-in;
+    transition-delay: 0.1s;
+    cursor: pointer;
+    
+}
+.tl1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.tl12:hover{
+    color: #89CFF0;
+    cursor: pointer;
+}
+#icon9{
+    top: 15px;
+    position: relative;
+    font-size: 40px;
+
+}
+.spacebtn{
+    position: relative;
+    bottom: 15px;
+
+}
+.l3{
+    justify-content: center;
+    border-bottom: solid #89CFF0 2px;
+    width: 80px; 
+     
+}
+
+.l4{  
+    justify-content: center;
+    border-bottom: solid #89CFF0 2px;
+    width: 80px;
+    margin: 0.5rem 0;  
+ 
+}
+.l5{
+    border-bottom: solid #89CFF0 2px;
+    width: 90px; 
+    margin: 0.5rem 0;  
+}
+
+/* Copyright*/
+
+.copyright{
+    color: #fff;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+    font-size: 15px;
+    font-family: poppins;
+    background-color:#6082B6;
+}

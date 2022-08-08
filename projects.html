@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Me</title>
+</head>
+<body>
+    <header> 
+        <div class="aboutheader">
+        <div class="nav">
+            <img src="./Images/Logo.png" id="logo">
+            <ul class="nav">
+                <li class="current"><a href="home.html">HOME</a></li>
+                <li class="current"><a href="mywork.html">MY WORK</a></li>
+                <li class="current"><a href="blog.html">BLOG</a></li>
+                <li class="current1"><a href="projects.html">PROJECTS</a></li>
+                <li class="current"><a href="contact.html">CONTACT</a></li>
+                <li class="current"><a href="aboutme.html">ABOUT ME</a></li>
+            </ul>
+    </div>
+    </header>
+    <img src="./Images/projectimg.png" class="project-image">
+
+    <!-- Flex Part 1 HTML CSS Code -->
+
+
+<div class="divheading">
+    <h2>Project Name: Book Web Page</h2> 
+</div>
+<div class="container">
+    <div class="project-box">
+        <h3>HTML</h3>
+        <div class="project-text">
+            <pre>
+< !DOCTYPE html>
+< html lang="en">
+< head>
+< title>Document</>
+< link rel="stylesheet" href="./style.css">
+< /head>
+< body>
+< section class="part1">
+< div id="main-header">
+< div id="cointener">
+< img src="./image/booklogo.png" id="logo">
+< ul class="nav">
+< li>< a href="index.html" class="menu-item">Home</> </li>
+< li>< a href="library.html" class="menu-item">Library</> </li>
+< li>< a href="cart.html" class="menu-item">Cart</> </li>
+< li>< a href="aboutus.html" class="menu-item">About Us</> </li>
+< li>< a href="contact.html" class="menu-item">Contact</> </li>
+< /ul>
+< /div>
+< /div>
+< div id="content">
+< div class="book">
+< img src="./image/bookimg.png" alt="BOOKIMAGE" class="BookImg">
+< /div>
+< div class="about-book">
+< h1 class="BookName">Atomic Habits</>
+< p>A supremely practical and useful book. James Clear distils the most fundamental information about habit formation, so you can accomplish more by focusing on less. ’ Mark Manson, author say when you want to change your life, you need to set big goals. But they’re wrong. World-renowned habits expert James Clear has discovered a simpler system for transforming your life. He knows that lasting change comes from the compound effect of hundreds of small decisions – doing two push-ups a day, waking up five minutes early, or holding a single short phone call. 
+< br> calls them atomic habits.
+< br>In this ground-breaking book, Clear reveals how these tiny changes will help you get 1 percent better every day. He uncovers a handful of simple life hacks (the forgotten art of Habit Stacking, the unexpected power of the Two Minute Rule, or the trick to entering the Goldilocks Zone) and delves into cutting-edge psychology and neuroscience to explain why they matter. Along the way, he tells inspiring stories of Olympic gold medalists, leading CEOs and distinguished scientists who have used the science of small habits to stay productive, motivated and happy. 
+< /p>
+< a href="cart.html" id="cart">Add To Cart</>
+< /div>
+< /div>
+< /section>
+< section class="part2">
+< div class="content">
+< div class="ch-content">
+< h1>Law 1</>
+< p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, incidunt? Quod unde voluptas
+temporibus laboriosam necessitatibus culpa dicta ipsa voluptatum, esse, vitae distinctio in earum
+sint magnam sapiente repudiandae sequi.</>
+< /div>
+< div class="ch-content">
+< h1>Law 2</>
+< p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, incidunt? Quod unde voluptas
+temporibus
+laboriosam necessitatibus culpa dicta ipsa voluptatum, esse, vitae distinctio in earum sint magnam 
+< /p>
+< /div>
+< div class="ch-content">
+< h1>Law 3</>
+< p>Lorem ipsum dolsit amet consectetuadipisicing eliFacilis, incidunt? Quunde voluptas temporibus
+laborionecessitaticulpa dicta ivoluptatum, esvitae distinctioearum sint magsapiente
+repudiandae sequp
+< /div>
+< /div>
+< /section>
+< /body>
+< /html> 
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="project-box">
+        <h3>CSS</h3>
+        <div class="project-text">
+            <pre>
+*
+body{
+width: fit-content;
+height: fit-content;
+}
+#logo{
+    margin-left: 50px;
+    width: 210px;
+    height: 110px;
+    display: flex;
+}
+/* ----- main-header -----*/
+#main-header{
+    background-image: linear-gradient(20deg, #4b4a4a,#8f8e8e);
+}
+#cointener{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    margin-right: 100px;
+}
+li{
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu-item {
+    color: beige;
+}
+.menu-item:hover{
+    text-decoration: underline darkgray;
+}
+
+/* ------ CONTENT ------*/
+                
+#content{
+    display: flex;
+}
+.BookImg{
+    margin: 50px 20px 0px 30px;
+    width: 400px;
+    height: 510px;
+    box-sizing: border-box rgb(0, 0, 0);
+    border: 10px;
+    flex-direction: column;
+}
+.BookName{
+    font-size: 40px;
+    padding: 30px 0px 0px 0px;
+}
+p{
+    padding: 0px 20px 20px 0px;
+    font-size: 20px;
+}
+.about-book{
+    margin: 10px 0px 0px 0px;
+    margin-bottom: 20px;
+
+}
+#cart{
+    text-align: center;
+    padding: 15px;
+    color: black;
+    border: 1px solid;
+    font-family: 'Segoe UI', Tahoma,sans-serif;
+}
+#cart:hover{
+    background-color: #c2c2c2;
+    color: #fff;
+    color: rgb(255, 255, 255);
+    border: 1px so;
+}
+/* ----- Part 2 -----*/
+.content{
+    padding: 110px 0px 0px 0px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+}
+.ch-content{
+    background-color:#c2c2c2;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ch-content:hover{
+    background-color: darkgrey;
+    color: #fff;
+}
+.book+.about-book{
+    justify-content: center;
+}
+            </pre>
+        </div>
+    </div>    
+</div>
+
+<!-- Flex Part 2 HTML CSS Code -->
+
+<div class="divheading">
+    <h2>Project Name: Box Animation</h2> 
+</div>
+<div class="container">
+    <div class="project-box">
+        <h3>HTML</h3>
+        <div class="project-text">
+            <pre>
+< !DOCTYPE html>
+< html>
+< head>
+    < title>Animation</>
+    < link rel="stylesheet" href="./box.css">
+< /head>
+< body>
+    < div class="box"></>
+< /body>
+< /html>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="project-box">
+        <h3>CSS</h3>
+        <div class="project-text">
+            <pre>
+body{
+    background-color: black;
+}
+.box{
+
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    position: relative;
+    animation-name: boxani;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;    
+}
+@keyframes boxani {
+    0% {background-color:rgb(255, 110, 110); 
+        left:300px; top:20px;
+        border-radius: 0px 0px 0px 0px;}
+    25% {background-color:rgb(255, 255, 111); 
+        left:600px; top:20px;
+        border-radius: 0px 50px 0px 0px ;}
+    50%  {background-color:rgb(122, 122, 253); 
+        left:600px; top:300px;
+        border-radius: 0px 50px 50px 0px ;}
+    75%  {background-color:rgb(139, 255, 139); 
+        left:300px; top:300px;
+        border-radius: 0px 50px 50px 50px;}
+    100% {background-color:rgb(255, 139, 139); 
+        left:300px; top:20px;
+        border-radius: 50px 50px 50px 50px;}
+    
+}
+            </pre>
+        </div>
+    </div>    
+</div>
+
+<!-- Flex Part 3 HTML CSS Code -->
+
+<div class="divheading">
+    <h2>Project Name: Hotel Page</h2> 
+</div>
+<div class="container">
+    <div class="project-box">
+        <h3>HTML</h3>
+        <div class="project-text">
+            <pre>
+< html>
+< head>
+< title>Task2(1)</>
+< link rel="stylesheet" type= "text/css" href="./hotel.css">
+< /head>
+< body> 
+< div class="bg">
+< div id="container">
+< img src="./Logo.png" alt="logo" id="logo"/>
+< ul class="nav">
+    < li class="header1">< a href ="#"></>HOME</>
+    < li class="header">< a href ="#"></>SERVICE</>
+    < li class="header">< a href ="#"></>CONTACT</>
+    < li class="header">< a href ="#"></>ABOUT</>
+</>
+</>
+< div id="main-content">
+< div class="sp">
+    < span class="tag0">Welcome To</>
+    < span class="tag1">The RoyalStay</>
+    < h2 class="tag2">The Hallmark of Urban Hospitality.</>
+    < button class="up">KNOW MORE</>
+</>
+< div class="p1">
+< img src="./img2.jpg" id="imgset" >
+< div class="p2">
+< span class="newtxt">THE HISTORY </>
+< span class="newtxt1"> OF OUR HOTEL</>
+< p class="txtn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis explicabo alias fugit maxime enim</>
+< button class="close">VIEW MORE</>
+< div class=" sec">
+< div class="sec1">
+    < h2>Best Location</>< br>
+    < p class="colum">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, totam.</>
+</>
+< div class="sec2">
+    < h2>Free Breakfast</>< br>
+    < p class="colum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, minus.</>
+</>
+< div class="sec3">
+       < h2>Swimming Pool</>< br>
+    < p class="colum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, itaque.</>
+< div>
+< /html>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="project-box">
+        <h3>CSS</h3>
+        <div class="project-text">
+            <pre>
+*{
+    margin: 0%;
+}
+.bg{
+    background-image: url(./bgimg.jpg);
+    height: 650px;
+    background-size: cover;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+
+}              
+#logo{
+    width: 70px;
+    height:70px;
+    padding: 12px 0px 0px 50px;
+}
+.nav{
+    padding: 20px 0px 0px 50px;
+    font-size: 22px;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+span{
+    font-size: 36px;
+    gap:0px
+}
+.sp{
+    font-family: poppins;
+    padding: 100px 0px 0px 50px;
+    text-align: center;
+    margin-block: 60px;
+}
+.tag0{
+    color:#fefae0;
+}
+.tag1{
+    color: #f28482;
+}
+.tag2{
+    padding: 20px 0px 0px 0px;
+    color: #bde0fe;
+    font-weight: 100;
+}
+a{
+    text-decoration: none;
+    color: #fefae0;
+    
+}
+.header1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bde0fe;
+    padding: 20px 70px 0px 0px ;
+    font-size: 17px;
+
+}
+.header{ 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fefae0;
+    padding: 20px 70px 0px 0px ;
+    font-size: 17px;
+}
+.header:hover{
+    color: #f28482;
+    transition: 0.5s;
+
+}
+h1{
+    text-align: center;
+}
+.main-content{
+    background-size: cover;
+    
+}
+.detail{
+    position: absolute;
+    bottom:2px;
+    right: 9px;
+    height: 300px;
+        width: 500px;
+    background-color: rgb(189, 140, 169);
+}
+blockquote{
+    margin-top: 30px;
+    margin-left: 50px;
+    
+}
+blockquote p{
+   text-align: justify;
+}
+.p1{
+    display: flex;
+    margin-top: 108px;
+    height: 500px;
+    width: 100%;
+    
+}
+.p2{
+    width: 50%;
+    height: auto;
+    background-color: #212529;
+    text-align: center;
+    
+}
+#imgset{
+    width: 50%;
+}
+
+button{
+    text-align: center;
+    height: 40px;
+    font-size: 15px;  
+    transition: all 500ms cubic-bezier(0.77,0,0.175,1);
+    margin-top: 150px;
+    user-select: none;
+    cursor: pointer;
+    border: #f28482;
+    position: relative;
+    bottom: 100px;
+}
+.up:hover, .up:focus{
+    color: #fff;
+    box-shadow:inset 7.5em 0 0 0 #f28482;
+}
+.close{
+    text-align: center;
+    height: 40px;
+    font-size: 15px;  
+    visibility: visible;
+    margin-top: 170px;
+    background-color: #bde0fe;
+}
+.close:hover, .close:focus{
+    color: #fff;
+    box-shadow: inset   0 3.5em 0 0 #f28482;
+    
+}
+
+pre{
+    text-align: justify;
+}
+.newtxt{
+    color: #bde0fe;
+    margin-top: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+}
+p{
+    color: #fff;
+}
+.newtxt1{
+    color: #f28482;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    font-family:Arial, Helvetica, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    top: 100px;
+}
+.txtn{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 130px;
+}
+.sec{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;   
+    .sec1,.sec3{
+    padding-top: 70px;
+    width: 33.33%;
+    background-color:#ffe8d6;
+}
+.sec2{
+    padding-top: 70px;
+    width: 33.33%;
+    background-color:#caf0f8;
+}
+.colum{
+    color: #000;
+    font-size: 15px;
+}
+            </pre>
+        </div>
+    </div>    
+</div>
+
+<!-- Hotel About Page  -->
+
+<div class="divheading">
+    <h2>HOTEL ABOUT PAGE</h2> 
+</div>
+<div class="container">
+    <div class="project-box">
+        <h3>HTML</h3>
+        <div class="project-text">
+            <pre>
+< html>
+< head>
+< title>ABOUT</>
+< link rel="stylesheet" type= "text/css" href="./about.css">
+< /head>
+< body> 
+< div id="container">
+< img src="./Logo.png" alt="logo" id="logo"/>
+< ul class="nav">
+< li>< a class="header" href ="hotel.html">HOME</>< /li>
+< li>< a class="header" href ="#">SERVICE</>< /li>
+< li>< a class="header" href ="#">CONTACT</>< /li>
+< li>< a class="header1" href ="about.html">ABOUT</></li>
+< /ul>
+< /div>
+< div class="container">
+< div class="textarea">
+< h2>About Our Hotel</>< br>
+< p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nam eos reiciendis quis adipisci eius qui! Vitae autem soluta quasi tempora commodi, sint deleniti sed. Velit eaque corrupti sit illum, dolorum nemo nisi labore placeat hic, recusandae laudantium obcaecati doloremque?</>
+< br>
+< p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, placeat corrupti nostrum minima enim totam.</>
+< /div>
+< div class="picture">
+< img src="./img3.jpg">
+< /div>
+< /div>
+< div class="pics">
+< img src="./img4.jpg">
+< div class="overtext">
+< h2>What Our Guests Says</>
+< div class="box">
+< img src="./people/p1.png">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ab commodi ad porro suscipit, et quasi temporibus delectus assumenda ducimus consectetur, optio natus earum soluta blanditiis architecto rem mollitia quas.
+< /div>
+< div class="box">
+< img src="./people/p2.png">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem voluptatum voluptatibus veritatis odio ipsa ipsam, ea iste illum cum harum alias! Porro perferendis debitis temporibus consequatur. Fuga, soluta iste!
+< /div>
+< /div>
+< /div>
+< /body>
+< /html>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="project-box">
+        <h3>CSS</h3>
+        <div class="project-text">
+            <pre>
+*{
+margin: 0%;
+}
+    @font-face {
+    font-family: poppins;
+    src: url(./Poppins-Regular.ttf);
+}
+#container{
+    background-image: url(./bgimg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    border-bottom: 3px solid #f28482;
+
+}
+
+#logo{
+    width: 70px;
+    height:70px;
+    padding: 12px 0px 0px 50px;
+}
+.nav{
+    padding: 35px 0px 0px 50px;
+    font-size: 22px;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.header1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bde0fe;
+    padding: 20px 70px 0px 0px ;
+    font-size: 17px;
+
+}
+.header{ 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fefae0;
+    padding: 20px 70px 0px 0px ;
+    font-size: 17px;
+}
+.header:hover{
+    color: #f28482;
+    transition: 0.5s;
+
+}
+.nav a{
+    text-decoration: none;
+    color: #fefae0;
+    
+}
+
+/* ---------------div 1---------------- */
+
+.container{
+    display: flex;
+    width: 100%;
+}
+.textarea {
+    font-family: poppins;
+    font-size: 16px;
+    padding: 50px 70px 30px 50px;
+    text-align: left;
+    width: 60%;
+}
+.picture img{
+    padding: 50px 70px 30px 50px;
+    height: 300px;
+    width: 500px;
+    border-radius: 70px;
+}
+
+.pics img{
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+
+}
+
+/* ------------------Div 2------------------ */
+
+.pics{
+    position: relative;
+}
+.overtext h2{
+    position: absolute;
+    top: 100;
+    left: 40%;
+    right: 40%;
+    color: aliceblue;
+}
+
+.box img{
+    width: 100;
+    height: 100;
+    border-radius: 50%;
+    padding-right: 10;
+    padding: 7;
+
+}
+.box{
+    top:30%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 174, 230, 0.7);
+}
+.box:nth-child(2){
+    top: 50%;
+}
+                </pre>
+        </div>
+    </div>    
+</div>
+
+<!-- Flex Part 4 HTML CSS Code -->
+
+
+<div class="divheading">
+    <h2>Project Name: BMI calculator</h2> 
+</div>
+<div class="container">
+    <div class="project-box">
+        <h3>HTML</h3>
+        <div class="project-text">
+            <pre>
+< !DOCTYPE html>
+< html lang="en">
+< head>
+    < meta charset="UTF-8">
+    < meta http-equiv="X-UA-Compatible" content="IE=edge">
+    < meta name="viewport" content="width=device-width, initial-scale=1.0">
+    < title>Task_4 BMI< /title>
+< /head>
+< body>
+" Script src"script.js" import "
+< "/body" >
+< "/html" >
+            </pre>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <h3>JS</h3>
+        <div class="project-text">
+            <pre>
+var MarkWeight = 78;
+var MarkHeiht = 1.69;
+var jhonWeight = 92;
+var jhonHeight = 1.95;
+
+// Body To Mass Ratio Calulator
+var BMIMark = MarkWeight / MarkHeiht ** 2;
+var BMIjhon = jhonWeight / jhonHeight ** 2;
+
+console.log(BMIMark);
+document.write(BMIMark);
+console.log(BMIjhon);
+document.write(BMIjhon);
+
+var markBmiHigh = BMIMark > BMIjhon;
+console.log(markBmiHigh);
+
+if(BMIMark > BMIjhon){
+    console.log("Mark BMI Is Higher Than Jhone");
+}else{
+    console.log("Jhone BMI Is Higher Than Mark")
+}
+
+// Object Approch from above calculator
+var mark = {
+    name:"mark",
+    height: 1.69,
+    weight: 78,
+    calculateBMI: function(){
+        mark.bmi = mark.weight / mark.height ** 2;
+    },
+}
+var jhon = {
+    name:"jhon",
+    height: 1.95,
+    weight: 92,
+    calculateBMI: function(){
+        jhon.bmi = jhon.weight / jhon.height ** 2;
+    },
+}
+mark.calculateBMI();
+console.log(mark.bmi);
+jhon.calculateBMI();
+console.log(jhon.bmi);
+
+if(mark.bmi > jhon.bmi){
+    console.log("Mark have higer bmi");
+}else{
+    console.log("jhone hvae higher bmi");
+}
+            </pre>
+        </div>
+    </div>    
+</div>
+
+
+<!-- Flex Part 5 HTML CSS Code -->
+
+<div class="divheading">
+    <h2>Project Name: Date And Time</h2> 
+</div>
+<div class="container">
+    <div class="project-box">
+        <h3>HTML</h3>
+        <div class="project-text">
+            <pre>
+< !DOCTYPE html>
+< html lang="en">
+< head>
+< meta charset="UTF-8">
+< meta http-equiv="X-UA-Compatible" content="IE=edge">
+< meta name="viewport" content="width=device-width, initial-scale=1.0">
+< title>Task_5 Time
+< body>
+< h1>Date:< span id="date"></>/< span id="month"></>/< span id="year"></></>
+< h1>Time:< span id="time"></>:< span id="minit"></>:< span id="second"></>< /h1>
+< h1>CurrentTime:< span id="current-time">< /h1>
+</ body>
+</ html>
+            </pre>
+        </div>
+    </div>
+
+    <div class="project-box">
+        <h3>JS</h3>
+        <div class="project-text">
+            <pre>
+const date = new Date();
+
+document.getElementById("date").innerHTML = date.getDate();
+document.getElementById("month").innerHTML = date.getMonth();
+document.getElementById("year").innerHTML = date.getFullYear();
+                
+document.getElementById("time").innerHTML = date.getHours();
+document.getElementById("minit").innerHTML = date.getMinutes();
+document.getElementById("second").innerHTML = date.getSeconds();
+                
+                
+setInterval(current , 1000);
+function current(){
+    var current = new Date();
+    document.getElementById("current-time").innerHTML = current.toLocaleTimeString();
+    // document.getElementById("current-time").innerHTML = current.toLocaleDateString();
+}
+            </pre>
+        </div>
+    </div>    
+</div>
+
+<!-- Flex Part 6 HTML CSS Code -->
+
+<div class="divheading">
+    <h2>Project Name: Contact Form</h2> 
+</div>
+<div class="container">
+    <div class="project-box1">
+        <h3>HTML</h3>
+        <div class="project-text1">
+<pre>
+< !DOCTYPE html>
+< html>
+< head>
+< link rel="stylesheet" type= "text/css" href="./form.css">
+< title>Document</>
+< body>
+< div class="main">
+< h1> CONTACT ME</>
+< form>
+< h3>NAME:</>
+< input type="text" id="name" placeholder="Enter Name">
+< h3>EMAIL:</>
+< input type="email" id="email" placeholder="Enter Email">
+< h3>PASSWORD:</>
+< input type="text" id="password" placeholder="Enter Password" >
+< h3>CONFORM PASSWORD:</>
+< input type="text" id="cpassword" placeholder="Conform Password">
+< br>
+< input type="submit" onclick="valid()" id="button">
+< /form>
+< /div>
+< /body>
+< /html>
+
+</pre>
+        </div>
+    </div>
+
+    <div class="project-box1">
+        <h3>CSS</h3>
+        <div class="project-text1">
+            <pre>
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    border: 1px solid rgb(153, 153, 255);
+    box-shadow: 0px 1px 1px 3px rgba(0, 0 , 0,0.5);
+    text-align: center;
+    align-items: center;
+    width: 100;
+    padding: 20;
+    border-radius: 10px;
+    padding: 3%;
+}
+h1{
+    color: rgb(153, 153, 255);
+    text-align: center;
+}
+h3{
+    font-size: 15px;
+    text-align: left;
+}
+#name,#email,#password,#cpassword{
+    width: 250px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid rgb(153, 153, 255);
+}
+#button{
+    margin-top: 40px; 
+    font-size: 17px;
+    width: 250px;
+    height: 40px;
+    border: solid rgb(153, 153, 255) ;
+    background-color: rgb(153, 153, 255);
+    border-radius: 30px;
+    color: aliceblue;
+}
+            </pre>
+        </div>
+    </div> 
+    
+    <div class="project-box1">
+        <h3>JS</h3>
+        <div class="project-text1">
+            <pre>
+function valid(){
+    var name= document.getElementById("name").value;
+    var email= document.getElementById("email").value;
+    var password= document.getElementById("password").value;
+    var cpassword= document.getElementById("cpassword").value;
+    if(name != name.match(/[A-Za-z]{2,}/)){
+       alert("Enter valid name")
+    }
+    else if(email != email.match(/[^A-Z]\w+@[a-z]+?\.[a-z]{2,3}/)){
+        alert("Enter valid email")
+    }
+    else if (password != password.match(/.{6,12}/)){
+       alert("enter valid password")
+    }
+    else if(password != cpassword){
+        alert("password was not match")
+    }
+    else{
+        alert("submit sucessfully")
+    }
+    console.log()
+                }
+            </pre>
+        </div>
+    </div>
+</div>
+
+
+<!------------------- footer------------------->
+
+<footer>
+        <div class="main-footer">
+        <div class="footer1" >
+            <h3>Company</h3>
+            <div class="l3"></div>
+            <pre>
+Near, 204 Copper Leaf,
+Opp. Pashwnath Jain Mandir,
+Aec Char Rasta, Bhuyangdev,
+Ahemdabad, gujrat 380061
+        </pre>
+        </div>
+        <div class="footer2">
+            <h3>Navigate</h3>
+            <div class="l4"></div>
+            <ul type="none">
+                <li class="li2"><a href ="home.html">Home</a></li>
+                <li class="li2"><a href ="mywork.html">My Work</a></li>  
+                <li class="li2"><a href ="blog.html">Blog</a></li>
+                <li class="li2"><a href ="projects.html">Projects</a></li>
+                <li class="li2"><a href ="contact.html">Contact</a></li>
+                <li class="li2"><a href ="aboutme.html">About Me</a></li>
+            </ul>
+        </div>
+        <div class="footer3">
+                <h3>Follow Me</h3>
+            <div class="l5"></div><br>
+            <div class="footer4" >
+                <div class="fc">
+                    <a id="is" class="fa-brands fa-facebook-f" href="https://www.facebook.com/nirajbx/"></a></div>
+                <div class="fc">
+                    <a id="is" class="fa-brands fa-twitter" href="https://www.twitter.com/nirajbx/"></a></div>
+                <div class="fc">
+                    <a id="is" class="fa-brands fa-instagram" href="https://www.instagram.com/nirajbx/"></a></div>
+                <div class="fc">
+                    <a id="is" class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/in/nirajbambharoliya/"></a></div>
+            </div><br>
+            <div class="spacebtn">
+                <i id="icon9" class="fa-solid fa-envelope"></i>
+                <h4 class="tl1"><b>EMAIL</b></h4>
+                <p class="tl12">nirajbambharoliya1@gmail.com</p>
+                <i id="icon9" class="fa-solid fa-phone"></i>
+                <h4 class="tl1"><b>PHONE</b></h4>
+                <p class="tl12">+91 95xxxxxx47</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2022 All Rights Reserved</p>
+            </div>
+</footer>
+</body>
+</html>
